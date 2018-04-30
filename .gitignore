@@ -6,5 +6,5 @@
 !*.gitattributes
 
 # Don't ignore config files
-.screenrc
-.vimrc
+!.screenrc
+!.vimrc
