@@ -1,0 +1,10 @@
+# Ignore everything
+*
+
+# Don't ignore git settings
+!*.gitignore
+!*.gitattributes
+
+# Don't ignore config files
+.screenrc
+.vimrc
