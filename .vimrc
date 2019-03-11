@@ -7,6 +7,9 @@ set shiftwidth=4
 set expandtab
 " Automatically remove all trialing whitespace when saving
 autocmd FileType c,cpp,py,C autocmd BufWritePre <buffer> %s/\s\+$//e
+" Change comment color
+" hi Comment ctermfg=6 "the light blue clashes with xml and python keywords
+hi Comment ctermfg=3
 " Highlight current line
 hi CursorLine   cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
 hi CursorColumn cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
