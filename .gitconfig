@@ -1,0 +1,53 @@
+[user]
+    name = "My Name"
+    email = "my email"
+	github = bdorney
+#[pager]
+#    difftool = true
+[alias]
+    graph1   = log --graph --full-history --all --color --pretty=format:"%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%s"
+    graph2   = log --graph --color --all --pretty=format:"%C(yellow)%H%C(green)%d%C(reset)%n%x20%cd%n%x20%cn%x20(%ce)%n%x20%s%n"
+    brgraph1 = log --graph --full-history --color --pretty=format:"%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%s"
+    brgraph2 = log --graph --color --pretty=format:"%C(yellow)%H%C(green)%d%C(reset)%n%x20%cd%n%x20%cn%x20(%ce)%n%x20%s%n"
+    brdgraph = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+    diffy    = "difftool --no-prompt --extcmd=\"colordiff -ydw --suppress-common-lines\""
+    diffv    = "difftool --no-prompt --extcmd=\"vimdiff\""
+    diff2    = "difftool --no-prompt --extcmd=\"diff --line-format='%3dn %L'\""
+    diffs    = "difftool --no-prompt --extcmd=\"sdiff -s\""
+    lastci   = "log --branches --not --remotes --simplify-by-decoration --decorate --oneline"
+    notci    = "log --branches --not --remotes"
+    dfile1   = "diff --name-only"
+    dfile2   = "diff --name-status"
+    st       = status -sb
+    ci       = commit
+    co       = checkout
+    cb       = checkout -b
+    br       = branch
+    lg       = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset' --abbrev-commit
+[http]
+    postBuffer = 524288000
+[branch]
+    autosetuprebase = always
+[core]
+    compression = 0
+    #editor      = emacs -nw
+    editor      = vim
+    #autocrlf    = input
+[color]
+    ui = auto
+#[filter "lfs"]
+#    clean    = git-lfs clean -- %f
+#    smudge   = git-lfs smudge -- %f
+#    required = true
+#[commit]
+#    template = ~/.git/COMMIT_MSG
+#[merge]
+#    tool = emerge
+#[mergetool "emerge"]
+    #cmd = emacs -Q $LOCAL $REMOTE $BASE $MERGED
+[github]
+    user = bdorney
+[gitlab]
+    user = bdorney
+#[rerere]
+#    enabled = true
