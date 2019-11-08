@@ -1,7 +1,7 @@
 [user]
-    name = "My Name"
-    email = "my email"
-	github = bdorney
+    name = insert full name
+    email = insert email address
+    github = bdorney
 #[pager]
 #    difftool = true
 [alias]
