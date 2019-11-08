@@ -2,10 +2,25 @@
 *
 
 # Don't ignore git settings
+!*.gitconfig
 !*.gitignore
 !*.gitattributes
 
 # Don't ignore config files
-!.gitconfig
 !.screenrc
 !.vimrc
+
+# Do not ignore C++ files
+!*.cpp
+!*.h
+
+# Do not ignore python files
+!*.py
+
+# Do not ignore shell scripts
+!*.sh
+
+# Do not ignore specific subdirectories
+!scripts
+!tests
+!tests/cpp

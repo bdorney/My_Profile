@@ -19,3 +19,5 @@ augroup CursorLine
     au VimEnter,WinEnter,BufWinEnter * setlocal cursorline
     au WinLeave * setlocal nocursorline
 augroup END
+" Do not move through document while typing search string
+set incsearch
